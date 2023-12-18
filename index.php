@@ -6,7 +6,6 @@
     include("./utils/bdd.php");//-> import de la connexion à la BDD
 
     $message = '';
-    $showArticle = '';
     $name ='';
     $prix ='';
 
@@ -32,16 +31,6 @@
                 $message = 'Remplissez correctement le formulaire';
         }
     }
-
-    // //J'APPELLE LA REQUETE POUR AFFICHER LA LISTE DES ARTICLES (fonction se trouvant dans le mdoel)
-    // $data = showArticle($bdd);
-    // foreach($data as $article){
-    //     $showArticle = $showArticle."<p>numéro de l'article : {$article['id_article']}</p>
-    //     <p>nom de l'article : {$article['nom_article']}</p>
-    //     <p>contenu de l'article : {$article['contenu_article']}</p>
-    //     <br><br>";
-    // }
-
     //JE DIS A LA VUE CE QU'ELLE DOIT AFFICHER. Je transmets les infos grâce à $message et $showArticle
     include('./view/view_article.php');
 ?>

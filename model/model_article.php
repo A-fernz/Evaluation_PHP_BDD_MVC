@@ -24,28 +24,4 @@ function addArticle($name,$prix,$bdd){
                 return $error->getMessage();
             }
 }
-
-
-// //RECUPERATION DE TOUS LES ARTICLES
-// function showArticle($bdd){
-//             try{
-            
-//                 //ETAPE 2 : Préparation de la requête
-//                 $req=$bdd->prepare('SELECT article.id_article, article.nom_article, article.contenu_article FROM article');
-        
-//                 //ETAPE 3 : Exécuter la requête
-//                 $req->execute();
-        
-//                 //ETAPE 4 : Récupération des données
-//                 $data=$req->fetchAll();
-
-//                 //ETAPE 5 : J'envoie les données au Controler
-//                 return $data;
-        
-//             }catch(Exception $error){
-//                 //J'envoie le message d'erreur au Controler
-//                 return $error->getMessage();
-//             }
-// }
-
 ?>
